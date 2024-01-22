@@ -9,10 +9,6 @@
     <link rel="icon" href="assets/img/ntt.png"/>
   </head>
   <style>
-    /* .body {
-    background-color: #e2edff;
-    } */
-
     .profile {
       display: flex;
       justify-content: center;
@@ -26,13 +22,18 @@
     /* .rounded-circle {
       margin-top: 80px;
     } */
-
     p{
       text-align: justify;
+      color: #0F1035;
     }
-  
+    h5{
+      color: #0F1035;
+    }
+  h2{
+    color: #0F1035;
+  }
     .profileImage {
-      width: 200px;
+      width: 300px;
       padding-bottom: 3rem;
     }
 
@@ -85,62 +86,11 @@
     padding-right: 2rem;
   }
 
-  .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  }
 
-  .footer .box-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-    display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .footer .box-container .box h3 {
-    font-size: 2rem;
-    padding: 1.5rem 0;
-    color: #fff;
-  }
-
-  .footer .box-container .box a {
-    display: block;
-    font-size: 1.4rem;
-    color: #fff;
-    padding: 1rem 0;
-  }
-
-  .footer .box-container .box a i {
-    color: #8ca2ba;
-    padding-right: .5rem;
-  }
-
-  .footer .box-container .box a:hover {
-    color: #8ca2ba;
-  }
-
-  .footer .box-container .box a:hover i {
-    padding-right: 2rem;
-  }
-
-  .footer .credit {
+  .footer p {
+    color: #D1D2D3;
     text-align: center;
-    margin-top: 2.5rem;
-    padding: 1rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color: #fff;
-  }
-
-  .footer .credit span {
-    color: #8ca2ba;
+    justify-content: center;
   }
 
   </style>
@@ -156,6 +106,15 @@
     header("location:index.php?pesan=gagal untuk login");
   }
   ?>
+
+  
+<?php
+  // Path untuk gambar
+  $ntt = 'assets/img/ntt.png';
+  $gmr1 ='assets/img/46.jpg';
+  $gmr2 ='assets/img/47.jpg';
+  $gmr3 ='assets/img/49.jpg';
+  ?>
     <!-- Akhir navbar -->
 
     <!-- Beranda -->
@@ -163,48 +122,61 @@
     <section class="deskripsi">
       <div class="container">
         <div class="profile">
-          <img class="rounded-circle profileImage" src="Logo-Bawaslu-2018-Icon-PNG-HD.png" alt=""/>
-          <h2>BAWASLU Kabupaten Kupang</h2>
+          <img class="rounded profileImage" src="<?php echo $ntt; ?>" alt=""/>
+          <h2>TVRI Nusa Tenggara Timur</h2>
+          <h2>Sejarah Singkat</h2>
           <p>
-            Badan Pengawas Pemilu atau Bawaslu dibentuk berdasarkan perintah Undang - Undang no 22 Tahun 2007 tentang Penyelenggara Pemilu. Sebelumnya, Pengawas Pemilu merupakan lembaga adhoc yaitu Panitia Pengawas Pemilu atau Panwaslu.
-            Tepatnya tahun 1982 uu memerintahkan pembentukan Panitia Pengawas Pelaksanaan Pemilu atau Panwaslak Pemilu, yang melekat pada Lembaga Pemilihan Umum atau LPU. Baru pada tahun 2003, Panwaslu dilepaskan dari struktur Komisi
-            Pemilian Umum atau KPU. Kewenangan utama Pengawas Pemilu adalah mengawasi pelaksanaan tahapan Pemilu, menerima pengaduan, serta menangani kasus-kasus pelanggaran administrasi, pidana Pemilu dan kode etik. Rabu, 12 April Tahun
-            2017 Presiden Joko Widodo melantik Anggota Bawaslu Periode 2017-2022 dan Rapat Pleno Bawaslu menetapkan Ketua Bawaslu adalah Abhan.
-          </p>
-          <a href="https://kupangkab.bawaslu.go.id/profil/  sejarah-pengawasan-pemilu">Selengkapnya</a>
+          Era pertelevisian di provinsi Nusa Tenggara Timur ditandai dengan berdirinya stasiun LPP TVRI Nusa Tenggara Timur. Bermula dengan pendirian TVRI Stasiun Keliling (SPK) Kupang dengan tugas meliput dan memproduksi program dan berita untuk selanjutnya dikirim ke TVRI pusat Jakarta untuk disiarkan secara Nasional
+          Tahun 2004 TVRI SPK Kupang berganti nomenklatur menjadi TVRI Nusa Tenggar Timur dan pada pertengahan tahun 2009 atau tepatnya tanggal 29 Juli pada momen ulang tahun TVRI nusa tenggara timur, untuk pertama kalinya dilaksanakan siaran lokal selama empat jam setiap hari hingga saat ini.
+          Pada tahun 1997 didirikan TVRI Sektor Transmisi Kupang dan Oben dengan tinggi Menara masing-masing 40 meter dan 150 meter. Saat itu siaran dikirim melalui microwave kupang menuju transmisi oben untuk selanjutnya dipancarkan dengan kekuatan 15 kilo watt, gelombang VHF.
+          <a href="https://tvrintt.co.id/index.php" style="text-decoration: none;">Selengkapnya</a>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
-
-    <div class="image">
-        <img src="Logo-Bawaslu-2018-Icon-PNG-HD.png" alt="">
+    <section class="" id="about">
+   <div class="row">
+  <div class="col-sm-4 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <img src="<?php echo $gmr1; ?>" style="height: 200px ; width: 500px;;" alt="">
+        <h5 class="card-title">Busana Daur Ulang Sampah Warnai Hari Sumpah Pemuda Di SMK Floras Focolodorawe</h5>
+        <p class="card-text">Dalam rangka memperingati hari sumpah pemuda dan bulan bahasa, siswa SMK Floras, Desa Focolodorawe, Kecamata Boawae, Nagekeo, mengenakan pakaian yang berbeda dari biasanya. Mereka mengenakan busana yang berasal dari barang barang bekas yang didaur ulang oleh para siswa. Busana yang dirancang itu berbahan dasar plastik, karung dan bagan lokal seperti daun lontar dan daun pandan. Selain itu, para siswa mempraktekan masak pangan lokal..</p>
+        <a href="https://tvrintt.co.id/index.php" class="btn btn-primary" style="text-decoration: none;">Selengkapnya</a>
+      </div>
     </div>
-
-    <div class="content">
-        <h3>Tentang Kami</h3>
-        <p>Badan Pengawas Pemilu adalah lembaga negara yang memiliki tugas pokok dan fungsi melakukan pengawasan terhadap seluruh tahapan pemilihan dan pemilu di seluruh wilayah Negara Kesatuan Republik Indonesia.</p>
+  </div>
+  <div class="col-sm-4 mb-3">
+    <div class="card">
+      <div class="card-body">
+      <img src="<?php echo $gmr2; ?>" style="height: 250px; width: 500px;;" alt="">
+        <h5 class="card-title">Pemkab Matim Kirim 30 Paduan Suara Wakili NTT Ikut Pesparani Nasional III di Jakarta</h5>
+        <p class="card-text">Pemerintah Kabupaten Manggarai Timur mengirimkan sebanyak 30 anggota paduan suara dewasa campuran (PSDC) mewakili Provinsi Nusa Tenggara Timur untuk mengikuti ajang Pesta paduan suara gerejani (Pesparani) Nasional III di Jakarta.</p>
+        <a href="https://tvrintt.co.id/index.php" class="btn btn-primary" style="text-decoration: none;">Selengkapnya</a>
+      </div>
     </div>
-
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+      <img src="<?php echo $gmr3; ?>" style="height: 250px; width: 500px;;" alt="">
+        <h5 class="card-title">Warga Wae Rebo Khawatir, Komodo Semakin Agresif</h5>
+        <p class="card-text">Warga Kampung Wae Rebo di Taman Nasional Komodo, Manggarai Barat, Nusa Tenggara Timur (NTT) khawatir akan perilaku komodo yang hidup berdampingan dengan warga di pulau Rinca. ketakutan ini semakin membayangi warga pasca Tangan Seorang Pemuda bernama Muhamimi Ardiansyah Nampira yang berusia 18 tahun terluka cukup serius karena digigit Komodo, beberapa waktu lalu.</p>
+        <a href="https://tvrintt.co.id/index.php" class="btn btn-primary" style="text-decoration: none;">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+</div
+  
   </section>
 
   <!-- Footer -->
   <section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i>+6281 246 273 242</a>
-            <a href="#"> <i class="fas fa-envelope"></i>mario.thung@gmail.com</a>
-            <a href="https://goo.gl/maps/mwstut3K9qjEwxnEA"><i class="fas fa-map"></i>kupang, Indonesia </a>
-        </div>
-
-    </div>
-
-    <div class="credit">Created by <span>Rio Thung</span></div>
-
+  <footer class="mt-5 p-3 bg-dark text-white">
+      <div class="container">
+        <p class="mb-0 mx-auto">© 2024 Yohanis Karmoi</p>
+      </div>
+    </footer>
 </section>
 
 <!-- Akhir Footer -->

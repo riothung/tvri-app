@@ -1,10 +1,10 @@
 
-<nav id="navbar-example2" class="navbar navbar-expand-lg" style="background-color: #8ca2ba" class="shadow-lg">
+<nav id="navbar-example2" class="navbar navbar-expand-lg" style="background-color: #365486" class="shadow-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="halaman_admin.php">
-        <img src="assets/img/ntt.png" alt="Logo" width="23" height="24"
+        <img src="assets/img/ntt.png" alt="Logo" width="50px" height="50px"
           class="d-inline-block align-text-top">
-        APLIKASI PENDATAAN PEKERJA
+        <span class="text-white">APLIKASI PENDATAAN PEKERJA </span>
       </a>
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -14,14 +14,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="halaman_admin.php" target="konten">Beranda</a>
+              <a class="nav-link text-white" aria-current="page" href="halaman_admin.php" >Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="data_pekerja.php">Data Pekerja</a>
+              <a class="nav-link text-white" href="data_pekerja.php">Data Pekerja</a>
             </li>
           </ul>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?php
               if ($_SESSION['level'] == "admin"){
                 echo "Admin";

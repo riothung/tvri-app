@@ -67,7 +67,7 @@
             <div class="mb-3 row mt-4">
                 <label for="jam" class="col-sm-2 col-form-label">Jam</label>
                 <div class="col-sm-10">
-                    <input autocomplete="off" required type="text" name="jam" class="form-control" id="jam" value="<?php echo $jam; ?>">
+                    <input autocomplete="off" required type="time" name="jam" class="form-control" id="jam" value="<?php echo $jam; ?>">
                 </div>
             </div>
             <div class="mb-3 row mt-4">
@@ -92,9 +92,17 @@
             </div>
             <div class="mb-3 row mt-4">
                 <label for="keterangan-kehadiran" class="col-sm-2 col-form-label">Keterangan Kehadiran</label>
-                <div class="col-sm-10">
+                <select name="keterangan_kehadiran" class="form-control" id="">
+                    <option value="Hadir">Hadir</option>
+                    <option value="Sakit">Sakit</option>
+                    <option value="Ijin">Ijin</option>
+                    <option value="Alpa">Alpa</option>
+                    <option value="Bolos">Bolos</option>
+                </select>
+                <!-- <div class="col-sm-10">
                     <input autocomplete="off" required type="text" name="keterangan_kehadiran" class="form-control" id="keterangan_kehadiran" value="<?php echo $keterangan_kehadiran; ?>">
-                </div>
+                </div> -->
+                
             </div>
         
             <div class="mb-3 row mt-4">

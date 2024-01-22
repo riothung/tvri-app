@@ -42,9 +42,6 @@
       <blockquote class="blockquote">
         <p>Berikut adalah data yang telah disimpan di database.</p>
       </blockquote>
-      <figcaption class="blockquote-footer">
-        Sistem CRUD:<cite title="Source Title"> Create, Read, Update, Delete</cite>
-      </figcaption>
       </figure>
       <a href="kelola.php" type="button" class="btn btn-primary mb-3">
         <i class="fa fa-plus"></i>
